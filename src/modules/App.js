@@ -1,11 +1,11 @@
 import React from 'react'
 import NavLink from './NavLink.js'
 
-var App = React.createClass({
+const App = React.createClass({
   render() {
     return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Repos are nice</h1>
       <ul role="nav">
         <li><NavLink onlyActiveOnIndex to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>

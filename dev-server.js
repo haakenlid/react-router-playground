@@ -1,9 +1,10 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+var config = require('./webpack.dev.config.js');
 
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
+  contentBase: config.output.path,
   hot: true,
   lazy: false,
   inline: true,

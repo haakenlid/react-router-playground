@@ -4,8 +4,11 @@
   "description": "tutorial with modifications",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "node server.js",
-    "start:prod": "webpack",
+    "start:dev": "node dev-server.js",
+    "start:prod": "npm run build && node ./dist/server.bundle.js",
+    "build:local": "webpack --config webpack.localhost.config.js",
+    "build:server": "webpack --config webpack.server.config.js",
+    "build": "npm run build:local && npm run build:server",
     "lint": "eslint src"
   },
   "author": "",
@@ -15,7 +18,8 @@
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
     "compression": "~1.6.1",
-    "if-env": "~1.0.0"
+    "if-env": "~1.0.0",
+    "express": "~4.13.4"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",

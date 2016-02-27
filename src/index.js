@@ -1,5 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Routes from './modules/Routes.js'
+import routes from './routes.js'
 
-render(Routes, document.getElementById('root'))
+render(routes, document.getElementById('root'))

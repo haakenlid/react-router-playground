@@ -1,12 +1,12 @@
 import React from 'react'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
-import App from './App.js'
-import About from './About.js'
-import Repos from './Repos.js'
-import Repo from './Repo.js'
-import Home from './Home.js'
+import { Router, browserHistory, Route, IndexRoute } from 'react-router'
+import App from './modules/App.js'
+import About from './modules/About.js'
+import Repos from './modules/Repos.js'
+import Repo from './modules/Repo.js'
+import Home from './modules/Home.js'
 
-var Routes = (
+const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
@@ -17,5 +17,4 @@ var Routes = (
     </Route>
   </Router>
 )
-export default Routes 
-
+export default routes
