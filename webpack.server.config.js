@@ -2,9 +2,8 @@ var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
 module.exports = {
-  // devtool: 'eval',
   entry: [
-    path.resolve(__dirname, 'src', 'build-server.js')
+    path.resolve(__dirname, 'build-server.js')
   ],
   output: {
     path: path.join(__dirname, 'dist'),

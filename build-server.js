@@ -2,10 +2,10 @@
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { match, RouterContext } from 'react-router'
-import { routes } from './routes.js'
 import express from 'express'
 import compression from 'compression'
 import path from 'path'
+import { routes } from './src/routes.js'
 
 const app = express()
 const PORT = process.env.PORT || 8080
