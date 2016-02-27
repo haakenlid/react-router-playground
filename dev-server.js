@@ -1,3 +1,4 @@
+// hot reload development server
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.dev.config.js');

@@ -1,3 +1,4 @@
+// local express node server
 var express = require('express');
 var path = require('path');
 var compression = require('compression');

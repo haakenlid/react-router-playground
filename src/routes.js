@@ -6,15 +6,13 @@ import Repos from './modules/Repos.js'
 import Repo from './modules/Repo.js'
 import Home from './modules/Home.js'
 
-const routes = (
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="/repos" component={Repos}>
-        <Route path="/repos/:userName/:repoName" component={Repo}/>
-      </Route>
-      <Route path="/about" component={About}/>
+export const routes = (
+  <Route path="/" component={App}>
+    <IndexRoute component={Home}/>
+    <Route path="/repos" component={Repos}>
+      <Route path="/repos/:userName/:repoName" component={Repo}/>
     </Route>
-  </Router>
+    <Route path="/about" component={About}/>
+  </Route>
 )
-export default routes
+export const router = (<Router routes={routes} history={browserHistory}/>)

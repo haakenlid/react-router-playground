@@ -5,7 +5,7 @@ const App = React.createClass({
   render() {
     return (
     <div>
-      <h1>Repos are nice</h1>
+      <h1>Hello World again</h1>
       <ul role="nav">
         <li><NavLink onlyActiveOnIndex to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>

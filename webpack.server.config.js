@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   // devtool: 'eval',
   entry: [
-    path.resolve(__dirname, 'prod-server.js')
+    path.resolve(__dirname, 'src', 'build-server.js')
   ],
   output: {
     path: path.join(__dirname, 'dist'),

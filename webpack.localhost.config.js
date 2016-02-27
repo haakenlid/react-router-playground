@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 module.exports = {
-  devtool: 'eval',
+  //devtool: 'eval',
   entry: [ './src/index.js' ],
   output: {
     path: path.join(__dirname, 'dist'),
